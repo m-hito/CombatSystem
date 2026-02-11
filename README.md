@@ -45,7 +45,7 @@ ReplicatedStorage/
 |    │   ├── BlockBreak
 |    │   ├── Fist, FireFist, others/
 |    │   │   ├── Blocked/1-5
-|   │   │   ├── Hit/1-5
+|    │   │   ├── Hit/1-5
 |    │   │   └── Swings/1-5
 |    │   └── Katana/ (same pattern)
 |    └── Weapons/
@@ -54,8 +54,8 @@ ReplicatedStorage/
 |    └── HitBoxTemplate ( Part ) 
 └── Modules/
       └── ClientEffects
-                └──
-
-
-
+                └── BlockBreak 
+                └── BlockEffect
+                └── DefaultHit
+                └── Sound  
 
