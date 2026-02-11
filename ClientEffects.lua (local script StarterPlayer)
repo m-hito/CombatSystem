@@ -1,0 +1,26 @@
+local replicatedStorage = game:GetService("ReplicatedStorage")
+local modules = replicatedStorage.Modules
+
+local remotes = replicatedStorage.Remotes
+
+local cachedModules = {}
+
+for _, module in modules.ClientEffects:GetChildren() do
+	
+	if module:IsA("ModuleScript") then
+		cachedModules[module.Name] = require(module)
+		
+	end
+	
+end 
+
+remotes.ClientEffects.OnClientEvent:Connect(function(action: string, argumentData: any)
+	local foundEffect = cachedModules[action]
+	
+	if foundEffect then
+ 
+		 foundEffect(argumentData)
+	end
+	
+end)
+
