@@ -31,7 +31,7 @@ ReplicatedStorage/
 |    ├── Animations/
 |    │   ├── Character/HitReaction
 |    │   ├── Client/
-|    │   └── Fist, Katana, .../
+|    │   └── Fist, Katana, Dagger, FireFist .../
 |    │       ├── Block/Idle
 |    │       ├── HitReactions/1-5
 |    │       └── Swings/L1-L5
@@ -54,8 +54,20 @@ ReplicatedStorage/
 |    └── HitBoxTemplate ( Part ) 
 └── Modules/
       └── ClientEffects
-                └── BlockBreak 
-                └── BlockEffect
-                └── DefaultHit
-                └── Sound  
+      |      └── BlockBreak 
+      |          └── BlockEffect
+      |          └── DefaultHit
+      |          └── Sound     
+      └── WeaponData
+              └── FireFist
+              └── Fist
+              └── More weapons
+
+
+StarterPlayer
+    └── StarterCharacterScripts
+                └── Core ( Folder )
+    
+
+
 
