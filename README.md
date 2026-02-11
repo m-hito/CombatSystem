@@ -26,7 +26,7 @@ ServerScriptService/
     │   └── FireFist ...
     └── InitializeCombat   # Parent = Systems
 
-ReplicatedStorage/
+ReplicatedStorage/ Assets / Modules / Remotes ( 3 core folder ) 
 └── Assets/
 |    ├── Animations/
 |    │   ├── Character/HitReaction
@@ -51,23 +51,30 @@ ReplicatedStorage/
 |    └── Weapons/
 |    |    ├── Dagger
 |    |    └── Katana
-|    └── HitBoxTemplate ( Part ) 
+|    └── HitBoxTemplate ( Part )
+|
 └── Modules/
-      └── ClientEffects
-      |      └── BlockBreak 
-      |          └── BlockEffect
-      |          └── DefaultHit
-      |          └── Sound     
-      └── WeaponData
-              └── FireFist
-              └── Fist
-              └── More weapons
-
+|      └── ClientEffects
+|      |      └── BlockBreak 
+|      |      └── BlockEffect 
+|      |      └── DefaultHit
+|      |      └── Sound     
+|      └── WeaponData
+|              └── FireFist (ModuleScript)
+|              └── Fist (ModuleScript)
+|              └── More weapons 
+└── Remotes
+        └── Attack
+        └── Block
+        └── ClientEffects
+        └── LoadAnims
 
 StarterPlayer
     └── StarterCharacterScripts
-                └── Core ( Folder )
-    
-
-
-
+    |     └── Core ( Folder )
+    |     |    └── GetTool (LocalScript)
+    |     |    └── Inputs (LocalScript)
+    |     |    └── Animations (ModuleScript)
+    |     └── Status (Folder)
+    └── StarterPlayerScripts
+            └── ClientEffects 
