@@ -5,3 +5,11 @@ Combat System v1.0
 - Swing 3 = special effect window
 - Modular state machine for player/enemy states
 - Built for wave spawner integration
+
+
+Folder heirachy 
+
+ServerScriptService
+
+ReplicatedStorage
+
